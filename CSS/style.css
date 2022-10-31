@@ -519,6 +519,143 @@ header .other-links{
 
 /* part six */
 
+.testimonials {
+    background-color: var(--section-background-color);
+    padding-top: 80px;
+    padding-bottom: 100px;
+}
+.testimonials .container {
+    display: grid;
+    gap: 40px;
+    grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
+}
+.testimonials .container > div{
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    position: relative;
+    border-radius: var(--main-border-radius);
+}
+.testimonials .container > div img {
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    right: -10px;
+    width: 100px;
+    height: 100px;
+    border: 10px solid var(--section-background-color);
+}
+.testimonials .container > div h4{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: 400;
+    color: rgb(119, 119, 119);
+}
+.testimonials .checked{
+    color: gold;
+}
+.testimonials .container > div p{
+    margin-top:10px ;
+    line-height: 1.6;
+    color: rgb(119, 119, 119);
+}
+
+/* part seven */
+
+.team{
+    padding-top:80px ;
+    padding-bottom:100px ;
+}
+.team .container {
+    display: grid;
+    gap: 40px;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+.team .box {
+    background-color: rgb(243, 243, 243);
+    padding: 40px 0px 25px 25px;
+    border-radius: var(--main-border-radius);
+    margin-left: 50px;
+}
+.team .box div > div{
+    display: grid;
+    align-content: center;
+}
+.team .box div > div a{
+    padding: 10px 20px;
+
+}
+.team .box div {
+    display: flex;
+    justify-content: flex-end;
+}
+.team .container img {
+    width: 105%;
+    border-radius: var(--main-border-radius);
+    transform: translateY(20px);
+}
+.team .container  h3{
+    color: var(--main-color);
+    margin-top: 40px;
+    font-size: 22px;
+}
+.team .container p{ 
+    margin-top: 10px;
+} 
+
+/* part eight */
+
+.services{
+    padding-top: 80px;
+    padding-bottom: 100px;
+    background-color: var(--section-background-color);
+}
+.services .container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 40px;
+}
+.services .container > div {
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 30px 20px 0;
+    box-shadow: 0px 0 10px -5px;
+    position: relative;
+    border-radius: var(--main-border-radius);
+    transition-duration: var(--main-transtion-time);
+}
+.services .container > div::before {
+    content: "";
+    position: absolute;
+    background-color: var(--main-color);
+    top: -3px;
+    height: 3px;
+    left: 50%;
+    width: 0;
+    transform: translateX(-50%);
+    transition-duration: var(--main-transtion-time);
+}
+.services .container > div:hover::before {
+    width: 90%;
+}
+.services .container > div:hover {
+    transform: translateY(-10px);
+}
+.services .container > div > h3{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 25px;
+    color: var(--main-color);
+}
+.services .container > div > div {
+    display: flex;
+    justify-content: space-between;
+}
+.services .container > div > div h3{
+    color: white;
+    background-color: var(--main-color);
+    font-size: 30px;
+    border-radius: 50%;
+}
 
 
 
